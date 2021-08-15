@@ -2,46 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f79efc78-26a4-4eec-9c4d-d694e913459a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/hero.vtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/heroForm.vtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/heroes.vtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.vtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/layout.vtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/squad.vtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/squadForm.vtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/squadHeroesSuccess.vtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/squadSuccess.vtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/squads.vtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/squdHeroesForm.vtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/success.vtl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Squad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Squad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HeroTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HeroTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SquadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SquadTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/hero.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/heroForm.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/heroes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/squad.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/squadForm.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/squadHeroesSuccess.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/squadSuccess.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/squads.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/squdHeroesForm.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/success.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
