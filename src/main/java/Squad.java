@@ -59,6 +59,7 @@ public class Squad {
             for (Hero hero : squad.getHeroes()) {
                 if (hero.getName().equals(newHero.getName())) {
                     exists = true;
+                    break;
                 }
             }
         }

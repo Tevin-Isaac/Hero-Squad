@@ -15,7 +15,7 @@ header,
 }
 
 .top-nav-collapse {
-  background-color: #bb9019 !important;
+  background-color: #78909c !important;
 }
 
 .navbar:not(.top-nav-collapse) {
@@ -44,141 +44,60 @@ h5 {
  padding-top:10%;
 }
 .jumbotron{
- background-color:rgba(233, 0, 70, 0.7);
+ background-color:rgba(0,0,0,0.7);
 }
 
-@import url('https://fonts.googleapis.com/css?family=Racing+Sans+One|Roboto');
 
-@function randomVal() {
-  @return random(256) - 1;
-}
 
-@mixin randomRGBA() {
-  background-color: rgba(randomVal(), randomVal(), randomVal(), .25);
-}
-
-body {
- // overflow: hidden;
-  height: 100%;
-}
-
-.slide {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0;
-  z-index: 1;
-  transition: opacity 1s;
- 
-  @media (min-width: 768px) {
-    flex-direction: row;
-    flex-wrap: wrap;
+#container{
+    display: flex;
+    justify-content: center;
   }
   
-  
-  &.visible {
-    opacity: 1;
-    z-index: 2;
-  }
-}
-
-$slides: 6;
-@while $slides>=0 {
-  .slide[data-slide="slide-#{$slides}"] {
-    @include randomRGBA();
-  }
-  $slides: $slides - 1;
-}
-
-.slide-image {
-  flex: 0 1 50%;
-
-  img {
-    width: 100%;
-    height: 75vh;
-    object-fit: cover;
-  
-    @media (min-width: 768px) {
-      height: 100vh;
-    }
-  }
-}
-
-.slide-caption {
-  flex: 0 1 50%;
-  display: flex;
-  background-color: inherit;
-}
-
-.slide-caption-content {
-  margin: auto;
-  width: 100%;
-  font-family: 'Roboto', sans-serif;
-  line-height: 1;
-  font-size: calc(14px + (19 - 14) * (100vw - 426px) / (768 - 426));
-  background-color: inherit;
-  padding: 0 .5em;
-  
-  @media(min-width: 768px) {
-    width: 90%;
-    line-height: 1.5;
-    font-size: 1.25rem;
+  #output{
+    display: flex;
   }
   
-  p {
-    padding: 0 1em;
+  /* centrer avatar card dans un conteneur grille grid */
+  #conteneur-avatar-card{
+    height: 410px;
+    display: grid;
+    grid-template-rows: 100vh;
+    grid-template-columns: 1fr;
   }
-}
-
-.title-bg {
-  background-color: inherit;
-  padding: 0 .75em;
-
-  h1 {
-    font-family: 'Racing Sans One', serif;
-    font-size: calc(28px + (44 - 28) * (100vw - 426px) / (768 - 426));
-    font-weight: 700;
-    line-height: 1.2;
-    padding: 5px 0;
-    
-    @media(max-width: 425px) {
-      margin: 0;
-    }
-    
-    @media(min-width: 768px) {
-      font-size: 2.8125rem;
-    }
-    
-  }
-}
-
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,400');
-body {
-  font-family: 'Raleway', sans-serif;
-  font-weight: thin;
-  background: black;
-}
-body:after{
-  content: "";
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  margin: 0;
-  z-index: -1;
-  width: 200%;
-  height: 200%;
-  background: url('https://i.pinimg.com/736x/f1/2e/2a/f12e2a1c7e8393322f71358a79139436--jedi-sith-episode-vii.jpg');
-  background-size: contain;
-  background-position: 600px -200px;
   
-  filter: blur(30px);
-}
+  /* centrer le contenu de l'avatar card */
+  .card{
+    display: grid;
+    width: 300px;
+    height: 395px;
+    margin: 50px 10px 0px 10px;
+    border: 2px solid #008bcc;
+    align-self: center;
+    text-align: center;
+  }
+  
+  /* appliquer une width, height et un radius à l'image H.Freeman*/
+  .card-img-top{
+    width: 110px;
+    height: 110px;
+    margin-top: -1vh;
+    justify-self: center;
+    align-self: center; 
+    border-radius: 50%;
+    border: 3px solid #0062cc;
+  }
+  
+  #super-hero{
+    margin-top: -3vh;
+  }
+  
+  .btn{
+    margin-top: 15px;
+  }
+
+
+
 .movie-card {
   position: relative;
   box-sizing: border-box;
@@ -256,9 +175,7 @@ p {
 }
 
 @media (max-width: 768px) {
-  body {
-/*     background: none; */
-  }
+
   .movie-card {
     width: 75%;
     height: 200px;
@@ -280,52 +197,4 @@ p {
   .movie-card {
     width: 100%;
   }
-}
-
-#container{
-    display: flex;
-    justify-content: center;
-  }
-  
-  #output{
-    display: flex;
-  }
-  
-  /* centrer avatar card dans un conteneur grille grid */
-  #conteneur-avatar-card{
-    height: 410px;
-    display: grid;
-    grid-template-rows: 100vh;
-    grid-template-columns: 1fr;
-  }
-  
-  /* centrer le contenu de l'avatar card */
-  .card{
-    display: grid;
-    width: 300px;
-    height: 395px;
-    margin: 50px 10px 0px 10px;
-    border: 2px solid #008bcc;
-    align-self: center;
-    text-align: center;
-  }
-  
-  /* appliquer une width, height et un radius à l'image H.Freeman*/
-  .card-img-top{
-    width: 110px;
-    height: 110px;
-    margin-top: -1vh;
-    justify-self: center;
-    align-self: center; 
-    border-radius: 50%;
-    border: 3px solid #0062cc;
-  }
-  
-  #super-hero{
-    margin-top: -3vh;
-  }
-  
-  .btn{
-    margin-top: 15px;
-  }
-
+} 

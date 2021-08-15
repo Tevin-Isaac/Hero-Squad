@@ -35,7 +35,7 @@ public class Hero {
         return mId;
     }
 
-    public static List<Hero> all() {
+    static List<Hero> all() {
         return heroes;
     }
 
@@ -43,7 +43,7 @@ public class Hero {
         heroes.clear();
     }
 
-    public static Hero find(int id) {
+    static Hero find(int id) {
         return heroes.get(id - 1);
     }
 }
