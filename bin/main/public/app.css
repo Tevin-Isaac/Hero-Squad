@@ -1,6 +1,6 @@
 html,
 body{
-  background-image: url(https://wallpaperaccess.com/full/247129.jpg);
+  background-image: url('https://www.wallpaperflare.com/spider-man-video-games-superhero-marvel-comics-rear-view-wallpaper-cusje');
 }
 header,
 .view {
@@ -17,7 +17,7 @@ header,
 }
 
 .top-nav-collapse {
-  background-color: #78909c !important;
+  background-color: #f8aa00 !important;
 }
 
 .navbar:not(.top-nav-collapse) {
@@ -26,7 +26,7 @@ header,
 
 @media (max-width: 991px) {
   .navbar:not(.top-nav-collapse) {
-    background: #78909c !important;
+    background: #ffbb01 !important;
   }
 }
 
@@ -39,7 +39,7 @@ h5 {
 }
 
 .hr-light {
-  border-top: 3px solid #fff;
+  border-top: 3px solid rgb(19, 18, 18);
   width: 80px;
 }
 .row{
@@ -51,17 +51,17 @@ h5 {
 
 
 
-#container{
+.container{
     display: flex;
     justify-content: center;
   }
   
-  #output{
+  .output{
     display: flex;
   }
   
   /* centrer avatar card dans un conteneur grille grid */
-  #conteneur-avatar-card{
+  .conteneur-avatar-card{
     height: 410px;
     display: grid;
     grid-template-rows: 100vh;
@@ -90,7 +90,7 @@ h5 {
     border: 3px solid #0062cc;
   }
   
-  #super-hero{
+  .super-hero{
     margin-top: -3vh;
   }
   
