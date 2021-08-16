@@ -6,9 +6,6 @@ Tevin Isaac
 ## Description
 
 This is an an app that allows one to recruit a well-balanced team of superheroes,
-where at the very least, they should have a name, age, special power and weakness.
-The heroes should also have a max size, name, and a cause
-a hero can only participate in one Squad at a time.
 Try out your new Hero.
 
 
@@ -19,5 +16,13 @@ The applications allow users to do the following:
 3.Add a squad name , size and a cause
 4.View a list of current squads
 3.View a list of heros in a squad
+
+## Known Bugs
+There are no known bugs at the moment
+
+ ## Technologies Used
+Java, Spark, Handlebars, Bootstrap, CSS
+
+
 
 Copyright(c)Tevin Isaac.
