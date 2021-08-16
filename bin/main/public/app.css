@@ -17,7 +17,7 @@ header,
 }
 
 .top-nav-collapse {
-  background-color: #f8aa00 !important;
+  background-color: #f8ae0e00 !important;
 }
 
 .navbar:not(.top-nav-collapse) {
@@ -26,7 +26,7 @@ header,
 
 @media (max-width: 991px) {
   .navbar:not(.top-nav-collapse) {
-    background: #ffbb01 !important;
+    background: #38352e00 !important;
   }
 }
 
@@ -39,64 +39,74 @@ h5 {
 }
 
 .hr-light {
-  border-top: 3px solid rgb(19, 18, 18);
+  border-top: 3px solid rgb(37, 36, 8);
   width: 80px;
 }
 .row{
  padding-top:10%;
 }
 .jumbotron{
- background-color:rgba(0,0,0,0.7);
+ background-color:rgba(252, 248, 32, 0);
 }
 
 
 
-.container{
-    display: flex;
-    justify-content: center;
-  }
-  
-  .output{
-    display: flex;
-  }
-  
-  /* centrer avatar card dans un conteneur grille grid */
-  .conteneur-avatar-card{
-    height: 410px;
-    display: grid;
-    grid-template-rows: 100vh;
-    grid-template-columns: 1fr;
-  }
-  
-  /* centrer le contenu de l'avatar card */
-  .card{
-    display: grid;
-    width: 300px;
-    height: 395px;
-    margin: 50px 10px 0px 10px;
-    border: 2px solid #008bcc;
-    align-self: center;
-    text-align: center;
-  }
-  
-  /* appliquer une width, height et un radius à l'image H.Freeman*/
-  .card-img-top{
-    width: 110px;
-    height: 110px;
-    margin-top: -1vh;
-    justify-self: center;
-    align-self: center; 
-    border-radius: 50%;
-    border: 3px solid #0062cc;
-  }
-  
-  .super-hero{
-    margin-top: -3vh;
-  }
-  
-  .btn{
-    margin-top: 15px;
-  }
+#container{
+  display: flex;
+  justify-content: center;
+}
+
+#output{
+  display: flex;
+}
+
+/* centrer avatar card dans un conteneur grille grid */
+#conteneur-avatar-card{
+  height: 410px;
+  display: grid;
+  grid-template-rows: 100vh;
+  grid-template-columns: 1fr;
+}
+
+/* centrer le contenu de l'avatar card */
+.card{
+  display: grid;
+  width: 300px;
+  height: 395px;
+  margin: 50px 10px 0px 10px;
+  border: 2px solid #1ab6ff;
+  align-self: center;
+  text-align: center;
+}
+
+/* appliquer une width, height et un radius à l'image H.Freeman*/
+.card-img-top{
+  width: 110px;
+  height: 110px;
+  margin-top: -1vh;
+  justify-self: center;
+  align-self: center; 
+  border-radius: 50%;
+  border: 3px solid #0062cc;
+}
+
+#super-hero{
+  margin-top: -3vh;
+}
+
+.btn{
+  margin-top: 15px;
+}
+
+/* 
+Ingrédients :
+nom ,age ,id secrète, powers, avatar card
+   
+ustensils :
+boucle for,
+   
+préparation
+*/
 
 
 
