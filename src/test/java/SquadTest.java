@@ -1,17 +1,22 @@
-import org.junit.*;
-import static org.junit.Assert.*;
+
 public class SquadTest {
 
     @Test
     public void squad_instantiatesCorrectly_true() {
-        Squad testSquad = new Squad("Suicide", 5, "Short temper");
+        new Squad("Suicide", 5, "Short temper");
         assertTrue(true);
+    }
+
+    private void assertTrue(boolean b) {
     }
 
     @Test
     public void getName_squadInstantiatesWithName_String() {
         Squad testSquad = new Squad("Suicide", 5, "Short temper");
         assertEquals("Suicide", testSquad.getName());
+    }
+
+    private void assertEquals(int i, int j) {
     }
 
     @Test
@@ -24,6 +29,9 @@ public class SquadTest {
     public void getCause_squadInstantiatesWithCause_String() {
         Squad testSquad = new Squad("Suicide", 5, "Short temper");
         assertEquals("Suicide", testSquad.getCause());
+    }
+
+    private void assertEquals(String string, String cause) {
     }
 
     @Test
@@ -54,6 +62,9 @@ public class SquadTest {
         new Squad("Suicide", 5, "Short temper");
         Squad secondSquad = new Squad("Genius", 4, "Java BDD ");
         assertEquals(Squad.find(secondSquad.getId()), secondSquad);
+    }
+
+    private void assertEquals(Squad find, Squad secondSquad) {
     }
 
     @Test

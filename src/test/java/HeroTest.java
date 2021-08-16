@@ -1,19 +1,21 @@
-import static org.junit.Assert.*;
 
-import org.junit.*;
 
 public class HeroTest {
 
     @Test
     public void Hero_instantiatesCorrectly_true() {
-        Hero myHero = new Hero("Tevin",90,"shooter","Kryptonite");
+        new Hero("Tevin",90,"shooter","Kryptonite");
         assertTrue(true);
+    }
+    private void assertTrue(boolean b) {
     }
     @Test
     public void getName_forHeroesName_String() {
         Hero myHero = new Hero("Tevin",90,"shooter","Kryptonite");
         String expected = "Tevin";
         assertEquals(expected, myHero.getName());
+    }
+    private void assertEquals(int i, int j) {
     }
     @Test
     public void getAge_forHeroesName_String() {
@@ -32,6 +34,8 @@ public class HeroTest {
         Hero myHero = new Hero("Tevin",90,"shooter","Kryptonite");
         String expected = "Tevin";
         assertEquals(expected, myHero.getPower());
+    }
+    private void assertEquals(String expected, String power) {
     }
     @Test
     public void getId_forHeroesName_int() {

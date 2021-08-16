@@ -1,15 +1,15 @@
-import static spark.Spark.*;
+import spark.ModelAndView;
+import spark.ResponseTransformer;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import spark.ModelAndView;
-import spark.ResponseTransformer;
+import static spark.Spark.*;
 
 public class App {
     public static void main(String[] args) {
         staticFileLocation("/public");
-        String layout = "templates/layout.html";
+        String layout = "templates/layout.vtl";
 
 
         ProcessBuilder process = new ProcessBuilder();
@@ -24,7 +24,7 @@ public class App {
 
         get("/", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
-            model.put("template", "templates/index.html");
+            model.put("template", "templates/index.vtl");
             return new ModelAndView(model, layout);
         }, (ResponseTransformer) new VelocityTemplateEngine());
 
@@ -33,7 +33,7 @@ public class App {
         get("/heroes", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             model.put("heroes", Hero.all());
-            model.put("template", "templates/heroes.html");
+            model.put("template", "templates/heroes.vtl");
             return new ModelAndView(model, layout);
         }, (ResponseTransformer) new VelocityTemplateEngine());
 
@@ -42,7 +42,7 @@ public class App {
             Map<String, Object> model = new HashMap<String, Object>();
             Hero hero = Hero.find(Integer.parseInt(request.params(":id")));
             model.put("hero", hero);
-            model.put("template", "templates/hero.html");
+            model.put("template", "templates/hero.vtl");
             return new ModelAndView(model, layout);
         }, (ResponseTransformer) new VelocityTemplateEngine());
 
@@ -50,7 +50,7 @@ public class App {
         // route to serve the form for adding new squads
         get("squads/new", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
-            model.put("template", "templates/squadForm.html");
+            model.put("template", "templates/squadForm.vtl");
             return new ModelAndView(model, layout);
         }, (ResponseTransformer) new VelocityTemplateEngine());
 
@@ -70,7 +70,7 @@ public class App {
         get("/squads", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             model.put("squads", Squad.all());
-            model.put("template", "templates/squads.html");
+            model.put("template", "templates/squads.vtl");
             return new ModelAndView(model, layout);
         }, (ResponseTransformer) new VelocityTemplateEngine());
 
@@ -79,7 +79,7 @@ public class App {
             Map<String, Object> model = new HashMap<String, Object>();
             Squad squad = Squad.find(Integer.parseInt(request.params(":id")));
             model.put("squad", squad);
-            model.put("template", "templates/squad.html");
+            model.put("template", "templates/squad.vtl");
             return new ModelAndView(model, layout);
         }, (ResponseTransformer) new VelocityTemplateEngine());
         // route to handle a form for adding new heroes to squads specific squad using the squad id
@@ -87,7 +87,7 @@ public class App {
             Map<String, Object> model = new HashMap<String, Object>();
             Squad squad = Squad.find(Integer.parseInt(request.params(":id")));
             model.put("squad", squad);
-            model.put("template", "templates/squadHeroesForm.html");
+            model.put("template", "templates/squadHeroesForm.vtl");
             return new ModelAndView(model, layout);
         }, (ResponseTransformer) new VelocityTemplateEngine());
 
@@ -119,7 +119,7 @@ public class App {
             }
 
             model.put("squad", squad);
-            model.put("template", "templates/squadHeroesSuccess.html");
+            model.put("template", "templates/squadHeroesSuccess.vtl");
             return new ModelAndView(model, layout);
         }, (ResponseTransformer) new VelocityTemplateEngine());
     }
