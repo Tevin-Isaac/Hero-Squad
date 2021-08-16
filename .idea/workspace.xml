@@ -5,12 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/main/public/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main/public/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/main/public/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main/public/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/main/templates/index.vtl" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main/templates/index.vtl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/main/templates/layout.vtl" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main/templates/layout.vtl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/public/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.vtl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.vtl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layout.vtl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout.vtl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
