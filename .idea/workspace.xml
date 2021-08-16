@@ -2,18 +2,61 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f79efc78-26a4-4eec-9c4d-d694e913459a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/main/templates/hero.vtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/main/templates/heroForm.vtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/main/templates/heroes.vtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/main/templates/index.vtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/main/templates/layout.vtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/main/templates/squad.vtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/main/templates/squadForm.vtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/main/templates/squadHeroesSuccess.vtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/main/templates/squadSuccess.vtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/main/templates/squads.vtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/main/templates/squdHeroesForm.vtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/main/templates/success.vtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/Hero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/Squad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/hero.vtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/heroForm.vtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/heroes.vtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.vtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout.vtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/squad.vtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/squadForm.vtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/squadHeroesSuccess.vtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/squadSuccess.vtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/squads.vtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/squdHeroesForm.vtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/success.vtl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HeroTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HeroTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SquadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SquadTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Hero.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Squad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/VelocityTemplateEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/VelocityTemplateEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HeroTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SquadTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/hero.vtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/heroForm.vtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/heroes.vtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.vtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layout.vtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/squad.vtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/squadForm.vtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/squadHeroesSuccess.vtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/squadSuccess.vtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/squads.vtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/squdHeroesForm.vtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/success.vtl" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

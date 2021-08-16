@@ -1,3 +1,4 @@
+package models;
 import java.util.*;
 public class Hero {
 
@@ -35,7 +36,7 @@ public class Hero {
         return mId;
     }
 
-    static List<Hero> all() {
+    public static List<Hero> all() {
         return heroes;
     }
 
@@ -43,7 +44,7 @@ public class Hero {
         heroes.clear();
     }
 
-    static Hero find(int id) {
+    public static Hero find(int id) {
         return heroes.get(id - 1);
     }
 }

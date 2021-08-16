@@ -1,5 +1,8 @@
+import models.Hero;
+import models.Squad;
 import spark.ModelAndView;
-import spark.ResponseTransformer;
+import spark.TemplateEngine;
+import spark.template.velocity.VelocityTemplateEngine;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -13,7 +16,7 @@ public class App {
 
 
         ProcessBuilder process = new ProcessBuilder();
-        int port;
+        Integer port;
         if (process.environment().get("PORT") != null) {
             port = Integer.parseInt(process.environment().get("PORT"));
         } else {
@@ -26,7 +29,7 @@ public class App {
             Map<String, Object> model = new HashMap<String, Object>();
             model.put("template", "templates/index.vtl");
             return new ModelAndView(model, layout);
-        }, (ResponseTransformer) new VelocityTemplateEngine());
+        },  new VelocityTemplateEngine());
 
 
         // getting all heroes  showing all hero details
@@ -35,7 +38,7 @@ public class App {
             model.put("heroes", Hero.all());
             model.put("template", "templates/heroes.vtl");
             return new ModelAndView(model, layout);
-        }, (ResponseTransformer) new VelocityTemplateEngine());
+        },  new VelocityTemplateEngine());
 
         //getting heroes by their id which was returned by find method //
         get("/heroes/:id", (request, response) -> {
@@ -44,7 +47,7 @@ public class App {
             model.put("hero", hero);
             model.put("template", "templates/hero.vtl");
             return new ModelAndView(model, layout);
-        }, (ResponseTransformer) new VelocityTemplateEngine());
+        },  new VelocityTemplateEngine());
 
 
         // route to serve the form for adding new squads
@@ -52,7 +55,7 @@ public class App {
             Map<String, Object> model = new HashMap<String, Object>();
             model.put("template", "templates/squadForm.vtl");
             return new ModelAndView(model, layout);
-        }, (ResponseTransformer) new VelocityTemplateEngine());
+        },  new VelocityTemplateEngine());
 
 
 
@@ -63,16 +66,16 @@ public class App {
             int size = Integer.parseInt(request.queryParams("size"));
             String cause = request.queryParams("cause");
             new Squad(name,size,cause);
-            model.put("template", "templates/squadSuccess.html");
+            model.put("template", "templates/squadSuccess.vtl");
             return new ModelAndView(model, layout);
-        }, (ResponseTransformer) new VelocityTemplateEngine());
+        },  new VelocityTemplateEngine());
         //route to handle squads showing all squads in the squads list
         get("/squads", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             model.put("squads", Squad.all());
             model.put("template", "templates/squads.vtl");
             return new ModelAndView(model, layout);
-        }, (ResponseTransformer) new VelocityTemplateEngine());
+        },  new VelocityTemplateEngine());
 
         //route to handle displaying found squad returned by the find method in class Hero
         get("/squads/:id",(request, response) -> {
@@ -81,7 +84,7 @@ public class App {
             model.put("squad", squad);
             model.put("template", "templates/squad.vtl");
             return new ModelAndView(model, layout);
-        }, (ResponseTransformer) new VelocityTemplateEngine());
+        }, new VelocityTemplateEngine());
         // route to handle a form for adding new heroes to squads specific squad using the squad id
         get("squads/:id/heroes/new", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
@@ -89,7 +92,12 @@ public class App {
             model.put("squad", squad);
             model.put("template", "templates/squadHeroesForm.vtl");
             return new ModelAndView(model, layout);
-        }, (ResponseTransformer) new VelocityTemplateEngine());
+        }, new TemplateEngine() {
+            @Override
+            public String render(ModelAndView modelAndView) {
+                return null;
+            }
+        });
 
 
         // modified the post("/heroes") route to "find" the Squad object that we are adding the newHero to then add the hero to that found Squad.
@@ -121,9 +129,6 @@ public class App {
             model.put("squad", squad);
             model.put("template", "templates/squadHeroesSuccess.vtl");
             return new ModelAndView(model, layout);
-        }, (ResponseTransformer) new VelocityTemplateEngine());
-    }
-
-    private static void staticFileLocation(String string) {
+        }, new VelocityTemplateEngine());
     }
 }
