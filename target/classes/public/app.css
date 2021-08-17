@@ -1,0 +1,176 @@
+html,
+body{
+background-image: url(https://wallpaperaccess.com/full/247129.jpg);
+}
+header,
+.view {
+  height: 100%;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 100vh;
+  }
+}
+
+.top-nav-collapse {
+  background-color: #f8ae0e00 !important;
+  background-image: url();
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #38352e00 !important;
+  }
+}
+
+h1 {
+  letter-spacing: 6px;
+}
+
+h5 {
+  letter-spacing: 2px;
+}
+
+.hr-light {
+  border-top: 3px solid rgb(37, 36, 8);
+  width: 80px;
+}
+.row{
+ padding-top:10%;
+}
+.jumbotron{
+ background-color:rgba(252, 248, 32, 0);
+}
+
+#container{
+  display: flex;
+  justify-content: center;
+}
+
+#output{
+  display: flex;
+}
+
+/* centrer avatar card dans un conteneur grille grid */
+#conteneur-avatar-card{
+  height: 410px;
+  display: grid;
+  grid-template-rows: 100vh;
+  grid-template-columns: 1fr;
+}
+
+/* centrer le contenu de l'avatar card */
+.card{
+  display: grid;
+  width: 300px;
+  height: 395px;
+  margin: 50px 10px 0px 10px;
+  border: 2px solid #008bcc;
+  align-self: center;
+  text-align: center;
+}
+
+/* appliquer une width, height et un radius à l'image H.Freeman*/
+.card-img-top{
+  width: 110px;
+  height: 110px;
+  margin-top: -1vh;
+  justify-self: center;
+  align-self: center; 
+  border-radius: 50%;
+  border: 3px solid #0062cc;
+}
+
+#super-hero{
+  margin-top: -3vh;
+}
+
+.btn{
+  margin-top: 15px;
+}
+
+#superheros { 
+  list-style:none; 
+  margin:100px 0; 
+  height:550px; 
+}
+#superheros li { 
+  display:inline; 
+  float:left;
+  -webkit-perspective: 500; 
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition-property: perspective; 
+  -webkit-transition-duration: 0.5s; 
+}
+
+#superheros li:hover
+   { -webkit-perspective: 5000; }
+ 
+#superheros li img { 
+  height: 500px;
+  border:10px solid #fcfafa; 
+  -webkit-transform: rotateY(30deg);
+   -moz-box-shadow:0 3px 10px #888; 
+  -webkit-box-shadow:0 3px 10px #888;
+   -webkit-transition-property: transform; 
+  -webkit-transition-duration: 0.5s; 
+}
+ 
+#superheros li:hover img { 
+  -webkit-transform: rotateY(0deg); }
+ 
+.heroinfo { 
+  border:10px solid #fcfafa; 
+  padding:20px; 
+  width:200px; 
+  height:180px; 
+  background-color:#deddcd; 
+  margin:-195px 0 0 55px; 
+  position:absolute;
+   -moz-box-shadow:0 20px 40px #888; 
+  -webkit-box-shadow:0 20px 40px #888;
+   -webkit-transform: translateZ(30px) rotateY(30deg);
+   -webkit-transition-property: transform, box-shadow, margin; 
+  -webkit-transition-duration: 0.5s; }
+
+#superheros li:hover .heroinfo { 
+  -webkit-transform: rotateY(0deg); 
+  -webkit-box-shadow:0 5px 10px #888; 
+  margin:-175px 0 0 30px; 
+}
+ 
+
+.heroinfo h3 { 
+  color:#7a3f3a; 
+  font-variant: small-caps; 
+  font-family:Georgia,serif,Times; 
+  text-align:center; 
+  padding-bottom:15px; 
+}
+.heroinfo p { 
+  padding-bottom:15px; 
+}
+.heroinfo a { 
+  background-color:#7a3f3a; 
+  padding:5px 10px; 
+  color:#eee; 
+  text-decoration:none; 
+  display:block; 
+  width:80px; 
+  text-align:center; 
+  margin:0 auto;
+  -moz-border-radius:5px; 
+  -webkit-border-radius:5px; 
+}
+.heroinfo a:hover, .heroinfo a:focus {
+  background-color:#6a191f; 
+  color:#fff; 
+}
