@@ -2,15 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f79efc78-26a4-4eec-9c4d-d694e913459a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bin/main/public/images/Screenshot from 2021-08-17 07-42-54.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/public/images/Screenshot from 2021-08-17 07-43-10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/public/images/Screenshot from 2021-08-17 07-43-17.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/public/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/public/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/public/images/Screenshot from 2021-08-17 07-42-54.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/public/images/Screenshot from 2021-08-17 07-43-10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/public/images/Screenshot from 2021-08-17 07-43-17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/public/images/heroes.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/hero.vtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/heroForm.vtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/heroes.vtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/index.vtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/layout.vtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/squad.vtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/squadForm.vtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/squadHeroesSuccess.vtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/squadSuccess.vtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/squads.vtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/squdHeroesForm.vtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/success.vtl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
